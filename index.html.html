@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Student Portal</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color:white;
+            min-height:100vh;
+        }
+
+        .navbar{
+            width:100%;
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            border-bottom:1px solid rgba(255,255,255,0.1);
+        }
+
+        .navbar h1{
+            font-size:28px;
+            color:#60a5fa;
+        }
+
+        .navbar p{
+            color:#cbd5e1;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px 40px;
+        }
+
+        .hero h2{
+            font-size:55px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            color:#dbeafe;
+            max-width:700px;
+            margin:auto;
+            line-height:1.6;
+        }
+
+        .section-title{
+            text-align:center;
+            margin-top:60px;
+            font-size:36px;
+        }
+
+        .container-grid{
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap:30px;
+            padding:50px 80px;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.08);
+            border:1px solid rgba(255,255,255,0.1);
+            border-radius:20px;
+            padding:30px;
+            transition:0.3s;
+            backdrop-filter: blur(10px);
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .card h3{
+            font-size:28px;
+            margin-bottom:15px;
+        }
+
+        .card p{
+            color:#dbeafe;
+            margin-bottom:25px;
+            line-height:1.6;
+        }
+
+        .card a{
+            text-decoration:none;
+            background:#3b82f6;
+            padding:12px 20px;
+            border-radius:10px;
+            color:white;
+            font-weight:bold;
+            display:inline-block;
+            transition:0.3s;
+        }
+
+        .card a:hover{
+            background:#2563eb;
+        }
+
+        .features{
+            padding:40px 80px 80px;
+        }
+
+        .feature-box{
+            display:flex;
+            justify-content:space-between;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .feature{
+            flex:1;
+            min-width:250px;
+            background: rgba(255,255,255,0.06);
+            padding:25px;
+            border-radius:20px;
+            text-align:center;
+        }
+
+        .feature h4{
+            margin-bottom:15px;
+            font-size:22px;
+            color:#93c5fd;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#cbd5e1;
+            border-top:1px solid rgba(255,255,255,0.1);
+            margin-top:40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h1>Azure Student Portal</h1>
+        <p>Cloud Networking + Storage Project</p>
+    </div>
+
+    <section class="hero">
+        <h2>Welcome to My Azure Cloud Portal</h2>
+
+        <p>
+            This website is hosted on Microsoft Azure using a Windows Virtual Machine,
+            IIS Web Server, Azure Networking, and Azure Blob Storage.
+        </p>
+    </section>
+
+    <h2 class="section-title">Portal Resources</h2>
+
+    <section class="container-grid">
+
+        <div class="card">
+            <h3>📘 Notes</h3>
+
+            <p>
+                Access lecture notes, study guides, and cloud computing resources.
+            </p>
+
+            <a href="https://studentportalstorage101.blob.core.windows.net/notes?sp=rl&st=2026-05-28T18:39:29Z&se=2026-05-29T02:54:29Z&spr=https&sv=2026-02-06&sr=c&sig=H%2FFJ4PwBdZP%2BiLN%2BlMvYBmugzEqmJSTlJK%2F%2Be1Rmyok%3D">
+                Open Notes
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>📝 Assignments</h3>
+
+            <p>
+                View assignments, practical activities, and coursework documents.
+            </p>
+
+            <a href="https://studentportalstorage101.blob.core.windows.net/assignments?sp=rl&st=2026-05-28T18:40:08Z&se=2026-05-29T02:55:08Z&sv=2026-02-06&sr=c&sig=nckZX%2BiFlKQf4ZpWafDYdu7%2FM2eMGUzUF%2BeREyHY1iI%3D">
+                Open Assignments
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>🖼 Media</h3>
+
+            <p>
+                Access images, screenshots, diagrams, and uploaded media files.
+            </p>
+
+            <a href="https://studentportalstorage101.blob.core.windows.net/media?sp=rl&st=2026-05-28T18:40:36Z&se=2026-05-29T02:55:36Z&sv=2026-02-06&sr=c&sig=fQBzpkxtPu2FQRQMemOOJ4hEwAaw5ICRegRWKFq5JpE%3D">
+                Open Media
+            </a>
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <h2 class="section-title">Azure Services Used</h2>
+
+        <br><br>
+
+        <div class="feature-box">
+
+            <div class="feature">
+                <h4>Virtual Machine</h4>
+                <p>
+                    Windows Server hosted in Microsoft Azure.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h4>Azure Networking</h4>
+                <p>
+                    Public IPs, VNets, Subnets, and NSG firewall rules.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h4>Blob Storage</h4>
+                <p>
+                    Cloud storage for notes, assignments, and media files.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>
+            CPDA101 Azure Practical Project | Student Cloud Portal
+        </p>
+    </footer>
+
+</body>
+</html>
